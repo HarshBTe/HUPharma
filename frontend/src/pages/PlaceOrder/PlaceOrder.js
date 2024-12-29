@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './PlaceOrder.css'
 import { StoreContext } from '../../context/StoreContext'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 const PlaceOrder = () => {
 
@@ -69,8 +70,8 @@ const PlaceOrder = () => {
       <div className='place-order-left'>
            <p className='title'>Delivery Information</p>
            <div className='multi-fields'>
-               <input required name='firstname' onChange={onChangeHandler} value={data.firstName} type='text' placeholder='First name' />
-               <input required name='lastname' onChange={onChangeHandler} value={data.lastName} type='text' placeholder='Last name' />
+               <input  name='firstname' onChange={onChangeHandler} value={data.firstName} type='text' placeholder='First name' />
+               <input  name='lastname' onChange={onChangeHandler} value={data.lastName} type='text' placeholder='Last name' />
            </div>
            <input required name='email' onChange={onChangeHandler} value={data.email} type='email' placeholder='Email address' />
            <input required name='street' onChange={onChangeHandler} value={data.street} type='text' placeholder='Street' />

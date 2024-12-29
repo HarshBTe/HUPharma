@@ -1,6 +1,6 @@
 import express from "express"
 
-import { addMedicine, listMedicine, removeMedicine } from "../controllers/medicineController.js"
+import { addMedicine, listMedicine, removeMedicine, updateMedicine } from "../controllers/medicineController.js"
 import multer from "multer"
 const medicineRouter = express.Router();
 
@@ -22,6 +22,8 @@ medicineRouter.post("/add", upload.single("image"),addMedicine)
 medicineRouter.get("/list", listMedicine)
 
 medicineRouter.post("/remove", removeMedicine)
+
+medicineRouter.put("/update/:id", upload.single("image"), updateMedicine )
 
 
 

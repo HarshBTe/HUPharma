@@ -1,0 +1,83 @@
+
+
+/* Container for the whole form */
+ .update-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+ .update-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+} 
+
+/* Message container for success or error messages */
+ .update-container p {
+    color: #ff0000;
+    font-weight: bold;
+} 
+
+/* Form styling */
+ .update-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+} 
+
+/* Input and textarea fields */
+ .update-container input,
+.update-container textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+} 
+
+/* Textarea specific height */
+ .update-container textarea {
+    height: 100px;
+} 
+
+/* Label styling */
+ .update-container label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+} 
+
+/* Button styling */
+ .update-container button {
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+} 
+
+/* Button hover effect */
+ .update-container button:hover {
+    background-color: black;
+} 
+
+/* Input file field styling */
+ .update-container input[type="file"] {
+    border: none;
+} 
+
+/* Error message styling */
+ .update-container .error-message {
+    color: red;
+    font-size: 1rem;
+} 
+
+

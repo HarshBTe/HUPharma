@@ -75,8 +75,12 @@ const Add = ({url}) => {
                  <p>Product Category</p>
                  <select onChange={onChangeHandler} name='category'>
                     <option value="Syrup">Syrup</option>
-                    <option value="Capsules">Capsules</option>
-                    <option value="Vitamins">Vitamins</option>
+                    <option value="Antibiotics">Antibiotics</option>
+                    <option value="Antipyretics">Antipyretics</option>
+                    <option value="Antiseptics">Antiseptics</option>
+                    <option value="Antacids">Antacids</option>
+                    <option value="Antihistamines">Antihistamines</option>
+                    <option value="Antihypertensives">Antihypertensives</option>
                  </select>
             </div>
             <div className='add-price flex-col'>

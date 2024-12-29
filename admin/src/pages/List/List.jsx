@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './List.css'
 import axios from "axios"
 import {toast} from "react-toastify"
+import { useNavigate } from 'react-router-dom'
 
 const List = ({url}) => {
 
@@ -33,6 +34,14 @@ const List = ({url}) => {
            }
   }
 
+ const navigate = useNavigate();
+
+ const updateMedicine = async(medicineId) => {
+  // const response = await axios.post(`${url}/api/medicine/update`, {id: medicineId});
+    navigate(`/update/${medicineId}`)
+ }
+
+
   useEffect(() => {
     fetchList();
   }, [])
@@ -56,7 +65,10 @@ const List = ({url}) => {
                      <p>{item.name}</p>
                      <p>{item.category}</p>
                      <p>${item.price}</p>
-                     <p onClick={() => removeMedicine(item._id)} className='cursor'>X</p>
+                     <div className='action'>
+                     <p onClick={() => removeMedicine(item._id)} className='cursor'>Remove</p>
+                     <p onClick={() => updateMedicine(item._id)} className='cursor'>Update</p>
+                     </div>
                 </div>
                )
           })}

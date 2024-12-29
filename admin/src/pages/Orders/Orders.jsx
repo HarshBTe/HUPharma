@@ -42,7 +42,7 @@ const Orders = ({url}) => {
       <div className='order-list'>
            {orders.map((order, index) => (
             <div key={index} className='order-item'>
-              <img src="" alt="" />
+              <img src="https://res.cloudinary.com/di3u22t0w/image/upload/v1734945681/parcel_icon_yinfc1.png" alt="" />
               <div>
                 <p className='order-item-food'>
                   {order.items.map((item,index) => {
