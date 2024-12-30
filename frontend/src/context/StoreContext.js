@@ -7,7 +7,7 @@ export const StoreContext = createContext(null)
 const StoreContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState({});
-    const url = "http://localhost:4000"
+    const url = "https://hu-backend-lpy8.onrender.com"
     const [token, setToken] = useState("")
     const [product_list, setProductList] = useState([])
 
