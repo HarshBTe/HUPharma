@@ -11,7 +11,7 @@ import Update from './pages/Update/Update'
 
 const App = () => {
 
-  const url = "http://localhost:4000";
+  const url = "https://hu-backend-lpy8.onrender.com";
 
 
   return (
